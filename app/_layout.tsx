@@ -1,17 +1,27 @@
 import { Stack } from "expo-router";
 import "../global.css";
+import { ConvexProvider, ConvexReactClient } from "convex/react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+
+const convex = new ConvexReactClient(
+	process.env.EXPO_PUBLIC_CONVEX_URL as string,
+	{
+		unsavedChangesWarning: false,
+	},
+);
 
 export default function RootLayout() {
 	return (
-		<SafeAreaProvider>
-			<StackLayout />
-		</SafeAreaProvider>
+		<ConvexProvider client={convex}>
+			<SafeAreaProvider>
+				<StackLayout />
+			</SafeAreaProvider>
+		</ConvexProvider>
 	);
 }
 
 function StackLayout() {
-	const isAuth = false;
+	const isAuth = true;
 
 	return (
 		<Stack>

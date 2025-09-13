@@ -34,6 +34,42 @@ export default function TabsLayout() {
 					}}
 				/>
 				<Tabs.Screen
+					name="trainings"
+					options={{
+						tabBarIcon: ({ color, size, focused }) => (
+							<Ionicons
+								name={focused ? "list" : "list-outline"}
+								size={size}
+								color={color}
+							/>
+						),
+					}}
+				/>
+				<Tabs.Screen
+					name="add-training"
+					options={{
+						tabBarIcon: ({ color, size, focused }) => (
+							<Ionicons
+								name={focused ? "add-circle" : "add-circle-outline"}
+								size={size}
+								color={color}
+							/>
+						),
+					}}
+				/>
+				<Tabs.Screen
+					name="stats"
+					options={{
+						tabBarIcon: ({ color, size, focused }) => (
+							<Ionicons
+								name={focused ? "stats-chart" : "stats-chart-outline"}
+								size={size}
+								color={color}
+							/>
+						),
+					}}
+				/>
+				<Tabs.Screen
 					name="profile"
 					options={{
 						tabBarIcon: ({ color, size, focused }) => (
