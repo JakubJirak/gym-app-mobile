@@ -5,7 +5,7 @@ export default function Links() {
 	return (
 		<View>
 			<ProfileLink
-				href="/profile/settings"
+				href="/profile/goals"
 				icon="trophy-outline"
 				text="Vahy a cile"
 			/>

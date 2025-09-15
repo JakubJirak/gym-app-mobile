@@ -1,10 +1,10 @@
 import { View } from "react-native";
-import ProfileHeader from "@/components/profile/profile-header";
+import ComponentHeader from "@/components/component-header";
 
 export default function Edit() {
 	return (
 		<View className="flex-1 bg-black px-5">
-			<ProfileHeader text="Upravit profil" />
+			<ComponentHeader text="Upravit profil" />
 		</View>
 	);
 }

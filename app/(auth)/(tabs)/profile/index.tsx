@@ -15,7 +15,7 @@ export default function Profile() {
 				</View>
 			</View>
 
-			<View className="gap-3 mb-6 ml-4">
+			<View className="gap-3 mb-8 ml-4">
 				<View className="flex-row items-center gap-6">
 					<Ionicons name="mail-outline" size={20} color="gray" />
 					<Text className="text-gray-400 text-lg tracking-wider">
