@@ -1,15 +1,14 @@
 import { Stack } from "expo-router";
 
-export default function AuthLayout() {
+export default function TrainingsLayout() {
 	return (
 		<Stack
 			screenOptions={{
+				headerShown: false,
 				contentStyle: {
 					backgroundColor: "#000", // Nebo "black"
 				},
 			}}
-		>
-			<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-		</Stack>
+		/>
 	);
 }

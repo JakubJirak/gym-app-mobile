@@ -12,12 +12,12 @@ export default function TabsLayout() {
 					tabBarActiveTintColor: "white",
 					tabBarShowLabel: false,
 					tabBarStyle: {
-						backgroundColor: "black",
-						borderTopColor: "#292929",
+						backgroundColor: "#0a0a0a",
+						borderTopColor: "#1a1a1a",
 						borderTopWidth: 1,
 						shadowColor: "transparent",
-						height: 70,
-						paddingTop: 5,
+						height: 72,
+						paddingTop: 6,
 					},
 				}}
 			>
@@ -46,7 +46,7 @@ export default function TabsLayout() {
 					}}
 				/>
 				<Tabs.Screen
-					name="add-training"
+					name="create"
 					options={{
 						tabBarIcon: ({ color, size, focused }) => (
 							<Ionicons

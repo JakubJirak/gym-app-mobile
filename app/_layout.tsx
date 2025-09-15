@@ -24,7 +24,13 @@ function StackLayout() {
 	const isAuth = true;
 
 	return (
-		<Stack>
+		<Stack
+			screenOptions={{
+				contentStyle: {
+					backgroundColor: "#000", // Nebo "black"
+				},
+			}}
+		>
 			<Stack.Protected guard={isAuth}>
 				<Stack.Screen name="(auth)" options={{ headerShown: false }} />
 			</Stack.Protected>

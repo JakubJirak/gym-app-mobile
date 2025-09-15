@@ -4,12 +4,12 @@ import { api } from "@/convex/_generated/api";
 
 export default function Index() {
 	const tasks = useQuery(api.tasks.get);
-	console.log(tasks);
 
 	return (
 		<View className="flex-1 bg-black">
 			<Text className="text-white">
-				Edit app/index.tsx to edit this screen.
+				domovska obrazovka, souhrny, posledni treninky, nejake statistiky...
+				{tasks?.length}
 			</Text>
 		</View>
 	);
