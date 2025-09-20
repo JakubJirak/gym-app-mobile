@@ -1,60 +1,69 @@
-import {ScrollView, Text, TextInput, View} from "react-native";
+import { Ionicons } from "@expo/vector-icons";
+import { ScrollView, Text, TextInput, View } from "react-native";
 import ComponentHeader from "@/components/component-header";
 
 export default function Edit() {
-  return (
-    <View className="flex-1 bg-black px-5">
-      <ComponentHeader text="Upravit profil"/>
-      <ScrollView>
-        <View className="gap-3 mt-4 mb-3">
-          <View className="flex-row gap-6 items-center">
-            <View className="w-[70px] h-[70px] rounded-full bg-gray-700"/>
-            <View>
-              <Text className="text-white text-lg font-bold">Username</Text>
-              <Text className="text-gray-400">Powerlifter</Text>
-            </View>
-          </View>
+	return (
+		<ScrollView className="flex-1 bg-primary px-5">
+			<ComponentHeader text="Upravit profil" />
+			<View className="gap-3 mt-8 mb-3">
+				<View className="gap-4 items-center">
+					<View>
+						<View className="w-[110px] h-[110px] rounded-full bg-gray-700 relative" />
+						<View className="absolute bottom-0 right-0 bg-accent size-10 items-center justify-center rounded-full">
+							<Ionicons name="pencil" size={20} color="white" />
+						</View>
+					</View>
 
-        </View>
-        <View className="gap-3 my-3">
-          <Text className="text-white font-bold tracking-wide">Zmenit vahu (kg)</Text>
-          <TextInput
-            className="border-2 border-gray-800 rounded-2xl caret-white px-4 text-gray-400"
-            defaultValue="79.00"
-            inputMode="decimal"
-          />
-        </View>
-        <View className="gap-3 my-3">
-          <Text className="text-white font-bold tracking-wide">Zmenit zamereni</Text>
-          <TextInput
-            className="border-2 border-gray-800 rounded-2xl caret-white px-4 text-gray-400"
-            defaultValue="powerlifter"
-          />
-        </View>
-        <View className="gap-3 my-3">
-          <Text className="text-white font-bold tracking-wide">Zmenit jmeno</Text>
-          <TextInput
-            className="border-2 border-gray-800 rounded-2xl caret-white px-4 text-gray-400"
-            defaultValue="username"
-          />
-        </View>
-        <View className="gap-3 my-2">
-          <Text className="text-white font-bold tracking-wide">Zmenit email</Text>
-          <TextInput
-            className="border-2 border-gray-800 rounded-2xl caret-white px-4 text-gray-400"
-            defaultValue="test@test.com"
-            inputMode="email"
-          />
-        </View>
-        <View className="gap-3 my-3">
-          <Text className="text-white font-bold tracking-wide">Zmenit heslo</Text>
-          <TextInput
-            className="border-2 border-gray-800 rounded-2xl caret-white px-4 text-gray-400"
-            defaultValue="heslo"
-            secureTextEntry
-          />
-        </View>
-      </ScrollView>
-    </View>
-  );
+					<View className="gap-1">
+						<Text className="text-white text-3xl font-bold text-center">
+							Username
+						</Text>
+						<Text className="text-gray-400 text-lg text-center">
+							Powerlifter
+						</Text>
+					</View>
+				</View>
+			</View>
+			<View className="gap-1 my-3">
+				<Text className="text-white font-semibold tracking-wide text-lg">
+					Váha
+				</Text>
+				<TextInput
+					className="bg-secondary rounded-2xl caret-white p-4 text-white"
+					defaultValue="79.00"
+					inputMode="decimal"
+				/>
+			</View>
+			<View className="gap-1 my-3">
+				<Text className="text-white font-semibold tracking-wide text-lg">
+					Jméno
+				</Text>
+				<TextInput
+					className="bg-secondary rounded-2xl caret-white p-4 text-white"
+					defaultValue="username"
+				/>
+			</View>
+			<View className="gap-1 my-3">
+				<Text className="text-white font-semibold tracking-wide text-lg">
+					Zaměření
+				</Text>
+				<TextInput
+					className="bg-secondary rounded-2xl caret-white p-4 text-white"
+					defaultValue="powerlifter"
+				/>
+			</View>
+
+			<View className="gap-1 my-3 pb-4">
+				<Text className="text-white font-semibold tracking-wide text-lg">
+					Email
+				</Text>
+				<TextInput
+					className="bg-secondary rounded-2xl caret-white p-4 text-white"
+					defaultValue="test@test.com"
+					inputMode="email"
+				/>
+			</View>
+		</ScrollView>
+	);
 }

@@ -1,15 +1,16 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { COLORS } from "@/constants/COLORS";
 
 export default function TabsLayout() {
 	return (
 		<>
-			<SafeAreaView className="bg-black" />
+			<SafeAreaView className="bg-primary" />
 			<Tabs
 				screenOptions={{
 					headerShown: false,
-					tabBarActiveTintColor: "white",
+					tabBarActiveTintColor: COLORS.accent,
 					tabBarShowLabel: false,
 					tabBarStyle: {
 						backgroundColor: "#0a0a0a",

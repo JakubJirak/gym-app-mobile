@@ -1,44 +1,50 @@
-import {Stack} from "expo-router";
+import { Stack } from "expo-router";
 import "../global.css";
-import {ConvexProvider, ConvexReactClient} from "convex/react";
-import {SafeAreaProvider} from "react-native-safe-area-context";
+import { ConvexBetterAuthProvider } from "@convex-dev/better-auth/react";
+import { ConvexReactClient } from "convex/react";
+import { StrictMode } from "react";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { authClient } from "@/lib/auth-client";
 
 const convex = new ConvexReactClient(
-  process.env.EXPO_PUBLIC_CONVEX_URL as string,
-  {
-    unsavedChangesWarning: false,
-  },
+	process.env.EXPO_PUBLIC_CONVEX_URL as string,
+	{
+		expectAuth: true,
+		unsavedChangesWarning: false,
+	},
 );
 
 export default function RootLayout() {
-  return (
-    <ConvexProvider client={convex}>
-      <SafeAreaProvider>
-        <StackLayout/>
-      </SafeAreaProvider>
-    </ConvexProvider>
-  );
+	return (
+		<StrictMode>
+			<ConvexBetterAuthProvider client={convex} authClient={authClient}>
+				<SafeAreaProvider>
+					<StackLayout />
+				</SafeAreaProvider>
+			</ConvexBetterAuthProvider>
+		</StrictMode>
+	);
 }
 
 function StackLayout() {
-  const isAuth = true;
+	const isAuth = true;
 
-  return (
-    <Stack
-      screenOptions={{
-        contentStyle: {
-          backgroundColor: "black"
-        },
-      }}
-    >
-      <Stack.Protected guard={isAuth}>
-        <Stack.Screen name="(auth)" options={{headerShown: false}}/>
-      </Stack.Protected>
-      <Stack.Protected guard={!isAuth}>
-        <Stack.Screen name="welcome" options={{headerShown: false}}/>
-        <Stack.Screen name="sign-up" options={{headerShown: false}}/>
-        <Stack.Screen name="sign-in" options={{headerShown: false}}/>
-      </Stack.Protected>
-    </Stack>
-  );
+	return (
+		<Stack
+			screenOptions={{
+				contentStyle: {
+					backgroundColor: "black",
+				},
+			}}
+		>
+			<Stack.Protected guard={isAuth}>
+				<Stack.Screen name="(auth)" options={{ headerShown: false }} />
+			</Stack.Protected>
+			<Stack.Protected guard={!isAuth}>
+				<Stack.Screen name="welcome" options={{ headerShown: false }} />
+				<Stack.Screen name="sign-up" options={{ headerShown: false }} />
+				<Stack.Screen name="sign-in" options={{ headerShown: false }} />
+			</Stack.Protected>
+		</Stack>
+	);
 }

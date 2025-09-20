@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 
 export default function Trainings() {
 	return (
-		<View className="flex-1 bg-black">
+		<View className="flex-1 bg-primary">
 			<Text className="text-white">zobrazeni vsech treninku</Text>
 			<Link
 				href={{
