@@ -20,7 +20,7 @@ export default function ProfileLink({ href, icon, text }: ProfileLinkProps) {
 				<Ionicons name={icon} size={28} color={COLORS.accent} />
 				<Text className="text-white text-xl tracking-wider flex-1">{text}</Text>
 				<View className="">
-					<Ionicons name="chevron-forward" size={20} color="lightgray" />
+					<Ionicons name="chevron-forward" size={20} color={COLORS.muted} />
 				</View>
 			</View>
 		</Link>

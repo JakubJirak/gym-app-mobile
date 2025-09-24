@@ -19,47 +19,45 @@ export default function Edit() {
 						<Text className="text-white text-3xl font-bold text-center">
 							Username
 						</Text>
-						<Text className="text-gray-400 text-lg text-center">
-							Powerlifter
-						</Text>
+						<Text className="text-muted text-lg text-center">Powerlifter</Text>
 					</View>
 				</View>
 			</View>
-			<View className="gap-1 my-3">
+			<View className="gap-2 my-3">
 				<Text className="text-white font-semibold tracking-wide text-lg">
 					Váha
 				</Text>
 				<TextInput
-					className="bg-secondary rounded-2xl caret-white p-4 text-white"
+					className="bg-secondary rounded-2xl caret-white p-4 text-white text-lg"
 					defaultValue="79.00"
 					inputMode="decimal"
 				/>
 			</View>
-			<View className="gap-1 my-3">
+			<View className="gap-2 my-3">
 				<Text className="text-white font-semibold tracking-wide text-lg">
 					Jméno
 				</Text>
 				<TextInput
-					className="bg-secondary rounded-2xl caret-white p-4 text-white"
+					className="bg-secondary rounded-2xl caret-white p-4 text-white text-lg"
 					defaultValue="username"
 				/>
 			</View>
-			<View className="gap-1 my-3">
+			<View className="gap-2 my-3">
 				<Text className="text-white font-semibold tracking-wide text-lg">
 					Zaměření
 				</Text>
 				<TextInput
-					className="bg-secondary rounded-2xl caret-white p-4 text-white"
+					className="bg-secondary rounded-2xl caret-white p-4 text-white text-lg"
 					defaultValue="powerlifter"
 				/>
 			</View>
 
-			<View className="gap-1 my-3 pb-4">
+			<View className="gap-2 my-3 pb-4">
 				<Text className="text-white font-semibold tracking-wide text-lg">
 					Email
 				</Text>
 				<TextInput
-					className="bg-secondary rounded-2xl caret-white p-4 text-white"
+					className="bg-secondary rounded-2xl caret-white p-4 text-white text-lg"
 					defaultValue="test@test.com"
 					inputMode="email"
 				/>
