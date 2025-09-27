@@ -1,4 +1,5 @@
 import { Stack } from "expo-router";
+import { COLORS } from "@/constants/COLORS";
 
 export default function TrainingsLayout() {
 	return (
@@ -6,7 +7,7 @@ export default function TrainingsLayout() {
 			screenOptions={{
 				headerShown: false,
 				contentStyle: {
-					backgroundColor: "#000", // Nebo "black"
+					backgroundColor: COLORS.primary,
 				},
 			}}
 		/>
