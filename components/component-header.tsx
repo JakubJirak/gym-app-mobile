@@ -6,7 +6,7 @@ export default function ComponentHeader({ text }: { text: string }) {
 	const router = useRouter();
 
 	return (
-		<View className="flex-row justify-between items-center">
+		<View className="flex-row justify-between items-center pb-2">
 			<TouchableOpacity className="w-8" onPress={() => router.back()}>
 				<Ionicons name="arrow-back-outline" size={28} color="white" />
 			</TouchableOpacity>

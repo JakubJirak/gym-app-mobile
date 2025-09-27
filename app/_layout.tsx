@@ -4,6 +4,7 @@ import { ConvexBetterAuthProvider } from "@convex-dev/better-auth/react";
 import { ConvexReactClient } from "convex/react";
 import { StrictMode } from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import { COLORS } from "@/constants/COLORS";
 import { authClient } from "@/lib/auth-client";
 
 const convex = new ConvexReactClient(
@@ -32,18 +33,16 @@ function StackLayout() {
 	return (
 		<Stack
 			screenOptions={{
-				contentStyle: {
-					backgroundColor: "black",
-				},
+				contentStyle: { backgroundColor: COLORS.primary },
 			}}
 		>
 			<Stack.Protected guard={isAuth}>
 				<Stack.Screen name="(auth)" options={{ headerShown: false }} />
 			</Stack.Protected>
 			<Stack.Protected guard={!isAuth}>
-				<Stack.Screen name="welcome" options={{ headerShown: false }} />
-				<Stack.Screen name="sign-up" options={{ headerShown: false }} />
-				<Stack.Screen name="sign-in" options={{ headerShown: false }} />
+				<Stack.Screen name="index" />
+				<Stack.Screen name="sign-in" />
+				<Stack.Screen name="sign-up" />
 			</Stack.Protected>
 		</Stack>
 	);

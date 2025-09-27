@@ -12,7 +12,8 @@ export default function Trainings() {
 						id={item.id}
 						name={item.name}
 						date={item.workoutDate}
-						exercises={item.workoutExercises.length}
+						//exercises={item.workoutExercises.length}
+						filter={item.filter}
 					/>
 				)}
 				keyExtractor={(item) => item.id}

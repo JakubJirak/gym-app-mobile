@@ -4,6 +4,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Push - Středa",
             "workoutDate": "2025-09-24",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-09-24T17:07:04.500Z"
             },
@@ -166,6 +170,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Pull - Pondělí",
             "workoutDate": "2025-09-22",
+            "filter": {
+              "name": "Pull",
+              "color": "#0047AB"
+            },
             "createdAt": {
                 "$date": "2025-09-22T15:42:31.054Z"
             },
@@ -401,6 +409,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Push - Neděle",
             "workoutDate": "2025-09-21",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-09-21T10:27:24.980Z"
             },
@@ -622,6 +634,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Rehab. Středa",
             "workoutDate": "2025-09-17",
+            "filter": {
+              "name": "Push",
+              "color": "#0047AB"
+            },
             "createdAt": {
                 "$date": "2025-09-17T15:23:22.682Z"
             },
@@ -831,6 +847,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Fullbody - Pondělí",
             "workoutDate": "2025-09-15",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-09-15T13:23:44.190Z"
             },
@@ -1106,6 +1126,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Rehab. Sobota",
             "workoutDate": "2025-09-13",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-09-13T14:01:18.081Z"
             },
@@ -1346,6 +1370,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Fullbody - Středa",
             "workoutDate": "2025-09-10",
+            "filter": {
+              "name": "Push",
+              "color": "#0047AB"
+            },
             "createdAt": {
                 "$date": "2025-09-10T16:50:52.808Z"
             },
@@ -1605,6 +1633,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Rehab. Pondělí",
             "workoutDate": "2025-09-08",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-09-08T16:08:22.242Z"
             },
@@ -1812,6 +1844,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Rehab. Pátek",
             "workoutDate": "2025-09-05",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-09-05T06:55:32.716Z"
             },
@@ -2052,6 +2088,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Rehab. Středa",
             "workoutDate": "2025-09-03",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-09-03T16:38:53.996Z"
             },
@@ -2233,6 +2273,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Rehab. Pondělí",
             "workoutDate": "2025-09-01",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-09-01T13:30:09.043Z"
             },
@@ -2454,6 +2498,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Rehab. Neděle",
             "workoutDate": "2025-08-31",
+            "filter": {
+              "name": "Push",
+              "color": "#0047AB"
+            },
             "createdAt": {
                 "$date": "2025-08-31T12:53:45.250Z"
             },
@@ -2694,6 +2742,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Rehab. Pátek",
             "workoutDate": "2025-08-29",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-08-28T19:20:18.846Z"
             },
@@ -2960,6 +3012,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Rehab. Úterý",
             "workoutDate": "2025-08-26",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-08-26T15:33:29.999Z"
             },
@@ -3148,6 +3204,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Rehab. Pondělí",
             "workoutDate": "2025-08-25",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-08-25T15:57:29.856Z"
             },
@@ -3324,6 +3384,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Rehab. Sobota",
             "workoutDate": "2025-08-23",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-08-23T12:01:10.020Z"
             },
@@ -3566,6 +3630,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Rehab. Pátek",
             "workoutDate": "2025-08-22",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-08-22T14:20:52.806Z"
             },
@@ -3702,6 +3770,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Středa 20.8.2025",
             "workoutDate": "2025-08-20",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-08-20T14:18:50.779Z"
             },
@@ -3916,6 +3988,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Pondělí 18.8.2025",
             "workoutDate": "2025-08-18",
+            "filter": {
+              "name": "Push",
+              "color": "#0047AB"
+            },
             "createdAt": {
                 "$date": "2025-08-18T14:02:58.060Z"
             },
@@ -4170,6 +4246,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Sobota 16.8.2025",
             "workoutDate": "2025-08-16",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-08-16T12:33:05.585Z"
             },
@@ -4422,6 +4502,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Čtvrtek 14.8.2025",
             "workoutDate": "2025-08-14",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-08-14T16:56:49.014Z"
             },
@@ -4584,6 +4668,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Středa 13.8.2025",
             "workoutDate": "2025-08-13",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-08-13T14:22:28.599Z"
             },
@@ -4765,6 +4853,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Pondělí 11.8.2025",
             "workoutDate": "2025-08-11",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-08-11T14:11:36.768Z"
             },
@@ -5045,6 +5137,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Sobota 9.8.2025",
             "workoutDate": "2025-08-09",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-08-09T15:07:32.833Z"
             },
@@ -5226,6 +5322,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Pátek 1.8.2025",
             "workoutDate": "2025-08-01",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-08-01T11:21:23.423Z"
             },
@@ -5381,6 +5481,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Středa 30.7.2025",
             "workoutDate": "2025-07-30",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-07-30T14:35:49.909Z"
             },
@@ -5562,6 +5666,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Pondělí 28.7.2025",
             "workoutDate": "2025-07-28",
+            "filter": {
+              "name": "Push",
+              "color": "#0047AB"
+            },
             "createdAt": {
                 "$date": "2025-07-28T15:02:30.747Z"
             },
@@ -5809,6 +5917,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Sobota 26.7.2025",
             "workoutDate": "2025-07-26",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-07-24T18:18:28.812Z"
             },
@@ -5964,6 +6076,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Středa 23.7.2025",
             "workoutDate": "2025-07-23",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-07-23T17:20:54.363Z"
             },
@@ -6145,6 +6261,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Pondělí 21.7.2025",
             "workoutDate": "2025-07-21",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-07-25T21:57:58.029Z"
             },
@@ -6385,6 +6505,10 @@ export const trainings = [
             "userId": "0cZkcuwtoTwK0Q0rzOJfLWHI7hj5BKHV",
             "name": "Pondělí 7.7.2025",
             "workoutDate": "2025-07-07",
+            "filter": {
+              "name": "Push",
+              "color": "#ff6347"
+            },
             "createdAt": {
                 "$date": "2025-07-28T13:05:10.854Z"
             },

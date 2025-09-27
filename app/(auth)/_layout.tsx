@@ -1,11 +1,12 @@
 import { Stack } from "expo-router";
+import { COLORS } from "@/constants/COLORS";
 
 export default function AuthLayout() {
 	return (
 		<Stack
 			screenOptions={{
 				contentStyle: {
-					backgroundColor: "#000", // Nebo "black"
+					backgroundColor: COLORS.primary,
 				},
 			}}
 		>

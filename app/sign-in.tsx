@@ -5,7 +5,7 @@ export default function SignIn() {
 	return (
 		<SafeAreaView className="bg-primary px-4">
 			<View className="flex-1 bg-primary">
-				<Text>signin</Text>
+				<Text className="text-white">signin</Text>
 			</View>
 		</SafeAreaView>
 	);

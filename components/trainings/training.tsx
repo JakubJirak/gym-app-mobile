@@ -9,10 +9,14 @@ interface TrainingProps {
 	id: string;
 	name: string;
 	date: string;
-	exercises: number;
+	//exercises: number;
+	filter: {
+		name: string;
+		color: string;
+	};
 }
 
-export default function Training({ id, name, date, exercises }: TrainingProps) {
+export default function Training({ id, name, date, filter }: TrainingProps) {
 	return (
 		<Link
 			href={{
@@ -21,6 +25,10 @@ export default function Training({ id, name, date, exercises }: TrainingProps) {
 			}}
 		>
 			<View className="py-6 px-2 flex-row">
+				<View
+					className="w-1 h-full rounded-lg mr-6"
+					style={{ backgroundColor: filter.color }}
+				/>
 				<View className="gap-3 flex-1">
 					<Text className="text-white text-xl font-semibold">{name}</Text>
 					<View className="flex-row gap-2 items-center">
@@ -30,9 +38,12 @@ export default function Training({ id, name, date, exercises }: TrainingProps) {
 						</Text>
 					</View>
 				</View>
-				<View>
-					<Text className="text-white text-sm bg-secondary px-3 py-2 rounded-2xl">
-						Cviky: {exercises}
+				<View className="flex-col justify-between">
+					<Text
+						className={`text-white text-sm border px-3 py-2 rounded-2xl text-center bg-[${filter.color}]`}
+						style={{ borderColor: filter.color }}
+					>
+						{filter.name}
 					</Text>
 				</View>
 			</View>

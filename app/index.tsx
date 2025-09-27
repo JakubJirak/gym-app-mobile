@@ -2,15 +2,13 @@ import { Link } from "expo-router";
 import { Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function WelcomeScreen() {
+export default function Welcome() {
 	return (
-		<SafeAreaView className="flex-1 bg-primary px-4">
+		<SafeAreaView className="flex-1 px-4 bg-primary">
 			<View className="flex-1 bg-primary">
-				<Text className="text-white text-5xl font-bold text-center mt-36">
-					welcome
-				</Text>
+				<Text className="text-5xl font-bold text-center mt-36">welcome</Text>
 				<View className="mt-auto mb-16 justify-center items-center gap-10">
-					<Link className="text-white text-xl" href="/sign-up">
+					<Link className="text-xl" href="/sign-up">
 						Sign Up
 					</Link>
 					<Link className="text-white text-xl" href="/sign-in">
