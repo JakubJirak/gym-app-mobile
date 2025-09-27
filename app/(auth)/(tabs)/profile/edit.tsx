@@ -1,10 +1,17 @@
 import { Ionicons } from "@expo/vector-icons";
 import { ScrollView, Text, TextInput, View } from "react-native";
 import ComponentHeader from "@/components/component-header";
+import { COLORS } from "@/constants/COLORS";
 
 export default function Edit() {
 	return (
-		<ScrollView className="flex-1 bg-primary px-5">
+		<ScrollView
+			style={{
+				flex: 1,
+				backgroundColor: COLORS.primary,
+				paddingHorizontal: 16,
+			}}
+		>
 			<ComponentHeader text="Upravit profil" />
 			<View className="gap-3 mt-8 mb-3">
 				<View className="gap-4 items-center">
@@ -52,7 +59,7 @@ export default function Edit() {
 				/>
 			</View>
 
-			<View className="gap-2 my-3 pb-4">
+			{/*<View className="gap-2 my-3 pb-4">
 				<Text className="text-white font-semibold tracking-wide text-lg">
 					Email
 				</Text>
@@ -61,7 +68,7 @@ export default function Edit() {
 					defaultValue="test@test.com"
 					inputMode="email"
 				/>
-			</View>
+			</View>*/}
 		</ScrollView>
 	);
 }

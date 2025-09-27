@@ -1,17 +1,24 @@
 import { Ionicons } from "@expo/vector-icons";
 import { ScrollView, Text, View } from "react-native";
 import Links from "@/components/profile/links";
+import { COLORS } from "@/constants/COLORS";
 
 export default function Profile() {
 	return (
-		<ScrollView className="flex-1 bg-primary px-5">
+		<ScrollView
+			style={{
+				flex: 1,
+				backgroundColor: COLORS.primary,
+				paddingHorizontal: 16,
+			}}
+		>
 			<View className="flex-row items-center gap-6 mb-8 mt-4">
 				<View className="w-[90px] h-[90px] rounded-full bg-gray-700" />
 				<View className="gap-1">
 					<Text className="text-white text-center text-3xl font-semibold tracking-wider">
 						Username
 					</Text>
-					<Text className="text-muted text-xl">Powefliter</Text>
+					<Text className="text-muted text-xl">Powerlifter</Text>
 				</View>
 			</View>
 

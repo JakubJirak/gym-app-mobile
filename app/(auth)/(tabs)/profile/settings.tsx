@@ -4,7 +4,7 @@ import ProfileLink from "@/components/profile/profile-link";
 
 export default function Settings() {
 	return (
-		<View className="flex-1 bg-black px-5">
+		<View className="flex-1 bg-black px-4">
 			<ComponentHeader text="Nastavení" />
 			<ProfileLink
 				href="/profile/about"

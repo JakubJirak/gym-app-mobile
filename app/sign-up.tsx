@@ -3,7 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function SignUp() {
 	return (
-		<SafeAreaView className="bg-primary">
+		<SafeAreaView className="bg-primary px-4">
 			<View className="flex-1 bg-primary">
 				<Text>signup</Text>
 			</View>

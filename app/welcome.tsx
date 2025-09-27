@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function WelcomeScreen() {
 	return (
-		<SafeAreaView className="flex-1 bg-primary">
+		<SafeAreaView className="flex-1 bg-primary px-4">
 			<View className="flex-1 bg-primary">
 				<Text className="text-white text-5xl font-bold text-center mt-36">
 					welcome

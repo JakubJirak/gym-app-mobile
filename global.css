@@ -1,3 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "nativewind/theme";
+
+@theme {
+	--color-primary: #050402;
+	--color-secondary: #0f0f0f;
+	--color-border: #ff944d;
+	--color-accent: #ed782b;
+	--color-muted: #8c8c8c;
+}

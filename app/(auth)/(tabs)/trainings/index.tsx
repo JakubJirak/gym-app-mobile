@@ -1,18 +1,25 @@
-import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { FlatList, View } from "react-native";
+import Training from "@/components/trainings/training";
+import { trainings } from "@/constants/trainings";
 
 export default function Trainings() {
 	return (
-		<View className="flex-1 bg-primary">
-			<Text className="text-white">zobrazeni vsech treninku</Text>
-			<Link
-				href={{
-					pathname: "/trainings/[id]",
-					params: { id: "1" },
-				}}
-			>
-				<Text className="text-white text-xl mt-4">odkaz na trenink</Text>
-			</Link>
+		<View className="flex-1 bg-primary px-4">
+			<FlatList
+				data={trainings}
+				renderItem={({ item }) => (
+					<Training
+						id={item.id}
+						name={item.name}
+						date={item.workoutDate}
+						exercises={item.workoutExercises.length}
+					/>
+				)}
+				keyExtractor={(item) => item.id}
+				ItemSeparatorComponent={() => (
+					<View className="w-full h-0.5 bg-secondary" />
+				)}
+			/>
 		</View>
 	);
 }

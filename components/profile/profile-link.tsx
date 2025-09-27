@@ -15,7 +15,14 @@ interface ProfileLinkProps {
 
 export default function ProfileLink({ href, icon, text }: ProfileLinkProps) {
 	return (
-		<Link href={href} className="p-[20px] bg-secondary rounded-xl">
+		<Link
+			href={href}
+			style={{
+				padding: 20,
+				backgroundColor: COLORS.secondary,
+				borderRadius: 12,
+			}}
+		>
 			<View className="flex flex-row items-center gap-6">
 				<Ionicons name={icon} size={28} color={COLORS.accent} />
 				<Text className="text-white text-xl tracking-wider flex-1">{text}</Text>
