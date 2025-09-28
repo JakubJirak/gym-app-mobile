@@ -4,6 +4,7 @@ import ExerciseSet from "./set";
 interface ExerciseProps {
 	name: string;
 	muscleGroup: string;
+	note: string | null;
 	sets:
 		| {
 				id: string;
@@ -21,7 +22,12 @@ interface ExerciseProps {
 		  }[];
 }
 
-export default function Exercise({ name, muscleGroup, sets }: ExerciseProps) {
+export default function Exercise({
+	name,
+	muscleGroup,
+	sets,
+	note,
+}: ExerciseProps) {
 	return (
 		<View className="py-4">
 			<View className="flex-row items-center mb-2">
@@ -41,6 +47,7 @@ export default function Exercise({ name, muscleGroup, sets }: ExerciseProps) {
 				)}
 				keyExtractor={(item) => item.id}
 			/>
+			{note && <Text className="text-muted mt-2">{note}</Text>}
 		</View>
 	);
 }

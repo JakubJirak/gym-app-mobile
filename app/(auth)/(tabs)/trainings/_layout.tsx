@@ -10,6 +10,8 @@ export default function TrainingsLayout() {
 					backgroundColor: COLORS.primary,
 				},
 			}}
-		/>
+		>
+			<Stack.Screen name="index" />
+		</Stack>
 	);
 }

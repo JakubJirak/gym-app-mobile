@@ -17,13 +17,13 @@ const convex = new ConvexReactClient(
 
 export default function RootLayout() {
 	return (
-		<StrictMode>
-			<ConvexBetterAuthProvider client={convex} authClient={authClient}>
-				<SafeAreaProvider>
-					<StackLayout />
-				</SafeAreaProvider>
-			</ConvexBetterAuthProvider>
-		</StrictMode>
+		//<StrictMode>
+		<ConvexBetterAuthProvider client={convex} authClient={authClient}>
+			<SafeAreaProvider>
+				<StackLayout />
+			</SafeAreaProvider>
+		</ConvexBetterAuthProvider>
+		//</StrictMode>
 	);
 }
 
