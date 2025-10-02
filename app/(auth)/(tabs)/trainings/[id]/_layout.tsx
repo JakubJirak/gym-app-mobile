@@ -10,7 +10,7 @@ import type {
 import { useLocalSearchParams, withLayoutContext } from "expo-router";
 import { createContext } from "react";
 import { View } from "react-native";
-import ComponentHeader from "@/components/component-header";
+import TrainingHeader from "@/components/trainings/training-header";
 import { COLORS } from "@/constants/COLORS";
 import { trainings } from "@/constants/trainings";
 
@@ -38,19 +38,19 @@ export default function TrainingIdLayout() {
 		<TrainingIdContext.Provider value={id}>
 			<View className="flex-1">
 				<View className="px-4">
-					<ComponentHeader text={training.name} />
+					<TrainingHeader text={training.name} />
 				</View>
 
 				<MaterialTopTabs
 					screenOptions={{
 						tabBarStyle: {
 							backgroundColor: COLORS.primary,
+							marginTop: -12,
 						},
 						tabBarActiveTintColor: COLORS.accent,
 						tabBarInactiveTintColor: "#999",
 						tabBarIndicatorStyle: {
 							backgroundColor: COLORS.accent,
-							paddingHorizontal: 8,
 						},
 					}}
 				>

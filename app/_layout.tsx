@@ -2,7 +2,7 @@ import { Stack } from "expo-router";
 import "../global.css";
 import { ConvexBetterAuthProvider } from "@convex-dev/better-auth/react";
 import { ConvexReactClient } from "convex/react";
-import { StrictMode } from "react";
+//import { StrictMode } from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { COLORS } from "@/constants/COLORS";
 import { authClient } from "@/lib/auth-client";
