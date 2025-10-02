@@ -18,7 +18,7 @@ export default function TrainingById() {
 		<View className="flex-1 bg-primary px-5 pt-2">
 			<FlatList
 				ListHeaderComponent={() => (
-					<View className="flex-row items-center mt-2 pb-4">
+					<View className="flex-row items-center mt-4 pb-4">
 						<View className="flex-row flex-1 gap-2">
 							<Ionicons
 								name="calendar-outline"
@@ -29,8 +29,11 @@ export default function TrainingById() {
 								{format(new Date(training.workoutDate), "PPPP", { locale: cs })}
 							</Text>
 						</View>
-						<Text className="text-white bg-secondary rounded-xl px-2 py-1 text-base">
-							Cviky: {training.workoutExercises.length}
+						<Text
+							className="text-white border rounded-xl px-2.5 py-1.5 text-base"
+							style={{ borderColor: `${training.filter.color}99` }}
+						>
+							{training.filter.name}
 						</Text>
 					</View>
 				)}

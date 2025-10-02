@@ -26,8 +26,8 @@ export default function Training({ id, name, date, filter }: TrainingProps) {
 		>
 			<View className="py-6 px-2 flex-row">
 				<View
-					className="w-[3px] h-full rounded-lg mr-6"
-					style={{ backgroundColor: filter.color }}
+					className={`w-[3px] h-full rounded-lg mr-6 bg-[${filter.color}]/60`}
+					style={{ backgroundColor: `${filter.color}99` }}
 				/>
 				<View className="gap-3 flex-1">
 					<Text className="text-white text-xl font-semibold">{name}</Text>
@@ -40,8 +40,8 @@ export default function Training({ id, name, date, filter }: TrainingProps) {
 				</View>
 				<View className="flex-col justify-between">
 					<Text
-						className={`text-white text-sm border px-2.5 py-1.5 rounded-2xl text-center bg-[${filter.color}]`}
-						style={{ borderColor: filter.color }}
+						className={`text-white text-sm border px-2.5 py-1.5 rounded-xl text-center`}
+						style={{ borderColor: `${filter.color}99` }}
 					>
 						{filter.name}
 					</Text>

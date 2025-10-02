@@ -6,13 +6,18 @@ export default function TrainingHeader({ text }: { text: string }) {
 	const router = useRouter();
 
 	return (
-		<View className="flex-row items-center mt-2 pb-2 gap-6 pr-2">
+		<View className="flex-row items-center mt-2 pb-4 pr-2">
 			<TouchableOpacity className="w-8" onPress={() => router.back()}>
 				<Ionicons name="chevron-back" size={28} color="white" />
 			</TouchableOpacity>
-			<Text className="text-white text-2xl font-semibold flex-1">{text}</Text>
-			<TouchableOpacity className="w-8">
+			<Text className="text-white text-2xl ml-4 font-semibold flex-1">
+				{text}
+			</Text>
+			<TouchableOpacity className="w-8 mr-1">
 				<Ionicons name="pencil" size={24} color="white" />
+			</TouchableOpacity>
+			<TouchableOpacity className="w-8">
+				<Ionicons name="ellipsis-vertical" size={24} color="white" />
 			</TouchableOpacity>
 		</View>
 	);
