@@ -1,3 +1,10 @@
+import {
+	ChartColumnIncreasing,
+	Dumbbell,
+	Repeat,
+	TrendingUp,
+	Weight,
+} from "lucide-react-native";
 import { useContext, useMemo } from "react";
 import { Text, View } from "react-native";
 import { trainings } from "@/constants/trainings";
@@ -51,30 +58,38 @@ export default function Stats() {
 
 	return (
 		<View className="bg-primary flex-1 pt-6 px-4">
-			<Text className="text-white text-2xl font-bold mb-6">
-				Celkové statistiky
-			</Text>
+			<View className="flex-row gap-3 items-center mb-6">
+				<ChartColumnIncreasing color="white" />
+				<Text className="text-white text-2xl font-bold">
+					Celkové statistiky
+				</Text>
+			</View>
+
 			<View className="flex-row gap-6">
-				<View className="bg-secondary w-[47%] items-center rounded-xl py-4">
+				<View className="bg-secondary w-[47%] items-center py-4 justify-between gap-2 rounded-2xl text-center">
+					<Dumbbell color="white" />
 					<Text className="text-white text-2xl font-bold mt-1">
 						{allExercises}
 					</Text>
 					<Text className="text-muted">Cviky</Text>
 				</View>
-				<View className="bg-secondary w-[47%] items-center rounded-xl py-4">
+				<View className="bg-secondary w-[47%] items-center py-4 justify-between gap-2 rounded-2xl text-center">
+					<TrendingUp color="white" />
 					<Text className="text-white text-2xl font-bold mt-1">{allSets}</Text>
 					<Text className="text-muted">Série</Text>
 				</View>
 			</View>
 
 			<View className="flex-row gap-6 mt-6">
-				<View className="bg-secondary w-[47%] items-center rounded-xl py-4">
+				<View className="bg-secondary w-[47%] items-center py-4 justify-between gap-2 rounded-2xl text-center">
+					<Weight color="white" />
 					<Text className="text-white text-2xl font-bold mt-1">
 						{totalWeight}kg
 					</Text>
 					<Text className="text-muted">Váha</Text>
 				</View>
-				<View className="bg-secondary w-[47%] items-center rounded-xl py-4">
+				<View className="bg-secondary w-[47%] items-center py-4 justify-between gap-2 rounded-2xl text-center">
+					<Repeat color="white" />
 					<Text className="text-white text-2xl font-bold mt-1">{allReps}</Text>
 					<Text className="text-muted">Opakování</Text>
 				</View>

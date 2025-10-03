@@ -16,17 +16,25 @@ export default function Links() {
 				text="Cviky"
 			/>
 
+			<ProfileLink href="/profile/rutiny" icon="layers-outline" text="Rutiny" />
+
 			<ProfileLink
+				href="/profile/friends"
+				icon="people-outline"
+				text="Přátelé"
+			/>
+
+			{/*<ProfileLink
 				href="/profile/edit"
 				icon="options-outline"
 				text="Upravit profil"
-			/>
+			/>*/}
 
-			<ProfileLink
+			{/*<ProfileLink
 				href="/profile/settings"
 				icon="settings-outline"
 				text="Nastavení"
-			/>
+			/>*/}
 		</View>
 	);
 }
