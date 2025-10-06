@@ -2,6 +2,7 @@ import { Stack } from "expo-router";
 import "../global.css";
 import { ConvexBetterAuthProvider } from "@convex-dev/better-auth/react";
 import { ConvexReactClient } from "convex/react";
+import { PaperProvider } from "react-native-paper";
 //import { StrictMode } from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { COLORS } from "@/constants/COLORS";
@@ -19,9 +20,11 @@ export default function RootLayout() {
 	return (
 		//<StrictMode>
 		<ConvexBetterAuthProvider client={convex} authClient={authClient}>
-			<SafeAreaProvider>
-				<StackLayout />
-			</SafeAreaProvider>
+			<PaperProvider>
+				<SafeAreaProvider>
+					<StackLayout />
+				</SafeAreaProvider>
+			</PaperProvider>
 		</ConvexBetterAuthProvider>
 		//</StrictMode>
 	);
