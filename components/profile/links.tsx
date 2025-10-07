@@ -24,17 +24,17 @@ export default function Links() {
 				text="Přátelé"
 			/>
 
-			{/*<ProfileLink
+			<ProfileLink
 				href="/profile/edit"
 				icon="options-outline"
 				text="Upravit profil"
-			/>*/}
+			/>
 
-			{/*<ProfileLink
+			<ProfileLink
 				href="/profile/settings"
 				icon="settings-outline"
 				text="Nastavení"
-			/>*/}
+			/>
 		</View>
 	);
 }

@@ -1,16 +1,21 @@
 import { Stack } from "expo-router";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { COLORS } from "@/constants/COLORS";
 
 export default function AuthLayout() {
 	return (
-		<Stack
-			screenOptions={{
-				contentStyle: {
-					backgroundColor: COLORS.primary,
-				},
-			}}
-		>
-			<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-		</Stack>
+		<>
+			<SafeAreaView className="bg-primary" />
+			<Stack
+				screenOptions={{
+					contentStyle: {
+						backgroundColor: COLORS.primary,
+					},
+				}}
+			>
+				<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+				<Stack.Screen name="[id]" options={{ headerShown: false }} />
+			</Stack>
+		</>
 	);
 }

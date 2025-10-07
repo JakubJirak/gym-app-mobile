@@ -57,6 +57,8 @@ export default function TrainingIdLayout() {
 					<MaterialTopTabs.Screen name="index" options={{ title: "Cviky" }} />
 					<MaterialTopTabs.Screen name="stats" options={{ title: "Stats" }} />
 				</MaterialTopTabs>
+
+				{/*<TrainingFooter id={training.id} />*/}
 			</View>
 		</TrainingIdContext.Provider>
 	);

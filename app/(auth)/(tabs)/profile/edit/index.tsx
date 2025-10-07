@@ -1,11 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
-import {
-	KeyboardAvoidingView,
-	ScrollView,
-	Text,
-	TextInput,
-	View,
-} from "react-native";
+import { Link } from "expo-router";
+import { KeyboardAvoidingView, ScrollView, Text, View } from "react-native";
 import ComponentHeader from "@/components/component-header";
 import { COLORS } from "@/constants/COLORS";
 
@@ -42,33 +37,49 @@ export default function Edit() {
 						</View>
 					</View>
 				</View>
-				<View className="gap-2 my-3">
-					<Text className="text-white font-semibold tracking-wide text-lg">
-						Váha
-					</Text>
-					<TextInput
-						className="bg-secondary rounded-2xl caret-white p-4 text-white text-lg"
-						defaultValue="79.00"
-						inputMode="decimal"
-					/>
-				</View>
-				<View className="gap-2 my-3">
-					<Text className="text-white font-semibold tracking-wide text-lg">
-						Jméno
-					</Text>
-					<TextInput
-						className="bg-secondary rounded-2xl caret-white p-4 text-white text-lg"
-						defaultValue="username"
-					/>
-				</View>
-				<View className="gap-2 my-3">
-					<Text className="text-white font-semibold tracking-wide text-lg">
-						Zaměření
-					</Text>
-					<TextInput
-						className="bg-secondary rounded-2xl caret-white p-4 text-white text-lg"
-						defaultValue="powerlifter"
-					/>
+
+				<View className="gap-4">
+					<Link
+						href="/(auth)/(tabs)/profile/edit/vaha"
+						style={{ width: "100%" }}
+					>
+						<View className="gap-2 my-3 w-full">
+							<Text className="text-white font-semibold tracking-wide text-lg">
+								Váha
+							</Text>
+							<View className="bg-secondary h-15 rounded-2xl caret-white p-4">
+								<Text className="text-white text-lg">79.00</Text>
+							</View>
+						</View>
+					</Link>
+
+					<Link
+						href="/(auth)/(tabs)/profile/edit/jmeno"
+						style={{ width: "100%" }}
+					>
+						<View className="gap-2 my-3 w-full">
+							<Text className="text-white font-semibold tracking-wide text-lg">
+								Jméno
+							</Text>
+							<View className="bg-secondary h-15 rounded-2xl caret-white p-4">
+								<Text className="text-white text-lg">79.00</Text>
+							</View>
+						</View>
+					</Link>
+
+					<Link
+						href="/(auth)/(tabs)/profile/edit/zamereni"
+						style={{ width: "100%" }}
+					>
+						<View className="gap-2 my-3 w-full">
+							<Text className="text-white font-semibold tracking-wide text-lg">
+								Zaměření
+							</Text>
+							<View className="bg-secondary h-15 rounded-2xl caret-white p-4">
+								<Text className="text-white text-lg">79.00</Text>
+							</View>
+						</View>
+					</Link>
 				</View>
 
 				{/*<View className="gap-2 my-3 pb-4">

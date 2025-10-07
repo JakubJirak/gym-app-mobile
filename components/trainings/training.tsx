@@ -20,7 +20,7 @@ export default function Training({ id, name, date, filter }: TrainingProps) {
 	return (
 		<Link
 			href={{
-				pathname: "/trainings/[id]",
+				pathname: "/[id]",
 				params: { id },
 			}}
 		>
